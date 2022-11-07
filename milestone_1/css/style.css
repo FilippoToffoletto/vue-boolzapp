@@ -4,12 +4,50 @@ body{
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
 }
+img{
+    width: 100%;
+}
 
 /* UTILITIES */
 .flex{
     display: flex;
 }
 
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.gap-10{
+    display: flex;
+    gap: 10px;
+}
+
+.gap-5{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/* GLOBAL */
+i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #B1B1B1;
+}
+
+i:hover{
+    color: #009588;
+}
+
+a{
+    color:#B1B1B1;
+    font-size: .8rem;
+}
+a:hover{
+    color: #009588;
+}
 
 /* MAIN-WRAPPER */
 .main-wrapper{
@@ -29,6 +67,116 @@ body{
     width: 40%;
     background-color: white;
 }
+
+.user-control-bar{
+    padding: 10px 20px;
+    background-color: #EAEAEA;
+}
+
+.img-user{
+    width: 40px;
+    height: 40px;
+}
+.img-user img{
+    border-radius: 50%;
+}
+
+.name-user{
+    font-size: 1.2rem;
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+/* NOTIFICATION */
+.notification-control{
+    background-color: #8EDAFC;
+    padding: 10px 20px;
+    line-height: 1.2rem;
+}
+
+.bell-notification i{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: #8EDAFC;
+    font-size: 1rem;
+}
+.bell-notification i:hover{
+    background-color: #B1B1B1;
+    color: #009588;
+}
+.notification{
+    padding: 5px 10px;
+}
+
+/* SEARCH BAR */
+.search-div{
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #FAFAFA;
+}
+.search-div button{
+    /* padding: 2px 15px; */
+    height: 40px;
+    width: 60px;
+    background-color: white;
+    border: none;
+}
+.search-div button:hover i{
+    color:#009588;
+}
+.search-div input{
+    width: calc(100% - 60px);
+    border: none;
+    padding: 5px 15px;
+    height: 30px;
+}
+
+/* CONTACT LIST */
+.contact-list{
+    height: calc(100% - 20px);
+    /* width: calc(100% - 25px); */
+    overflow: hidden;
+}
+
+.single-contact{
+    padding: 10px 10px;
+    width: 100%;
+}
+.single-contact:hover{
+    background-color: #D8DBD4;
+    cursor: pointer;
+}
+
+.image-single-contact{
+    width: 40px;
+    height: 40px;
+}
+.image-single-contact img{
+    border-radius: 50%;
+}
+
+.name-single-contact{
+    padding-left: 12px;
+    flex-grow: 1;
+}
+.name-single-contact span{
+    padding-left: 10px;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+}
+.name-single-contact .last-msg{
+    font-size: .7rem;
+    color: #B1B1B1;
+}
+.time-single-contact{
+    padding-right: 12px;
+    width: 60px;
+    font-size: .7rem;
+    color: #B1B1B1;
+}
+
 
 
 /* RIGHT */
