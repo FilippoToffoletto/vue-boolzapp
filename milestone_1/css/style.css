@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* UTILITIES */
+.flex{
+    display: flex;
+}
+
+
+/* MAIN-WRAPPER */
+.main-wrapper{
+    height: 100vh;
+    background: linear-gradient(#009588 15%, #D8DBD4 0%);
+    padding: 40px 120px;
+    overflow: hidden;
+}
+
+
+.central-container{
+    height: calc(100vh - 75px);
+}
+
+/* LEFT */
+.left-column{
+    width: 40%;
+    background-color: white;
+}
+
+
+/* RIGHT */
+.right-column{
+    width: 60%;
+    background-image: url('../../img/mine.jpg');
+}
