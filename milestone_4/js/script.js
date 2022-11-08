@@ -10,6 +10,7 @@ createApp ({
                     id: 0,
                     lastAccess: '07/11/2022 15:30',
                     visible: true,
+                    search: true,
                     messages: [
                         {
                         date: '10/01/2020 15:30:55',
@@ -34,6 +35,7 @@ createApp ({
                     id: 1,
                     lastAccess: '07/11/2022 15:00',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '20/03/2020 16:30:00',
@@ -58,6 +60,7 @@ createApp ({
                     id: 2,
                     lastAccess: '07/11/2022 17:00',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '28/03/2020 10:10:40',
@@ -82,6 +85,7 @@ createApp ({
                     id: 3,
                     lastAccess: '06/11/2022 20:00',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '10/01/2020 15:30:55',
@@ -101,6 +105,7 @@ createApp ({
                     id: 4,
                     lastAccess: '06/11/2022 19:46',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '10/01/2020 15:30:55',
@@ -120,6 +125,7 @@ createApp ({
                     id: 5,
                     lastAccess: '06/11/2022 18:00',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '10/01/2020 15:30:55',
@@ -144,6 +150,7 @@ createApp ({
                     id: 6,
                     lastAccess: '06/11/2022 15:30',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '10/01/2020 15:30:55',
@@ -163,6 +170,7 @@ createApp ({
                     id: 7,
                     lastAccess: '06/11/2022 14:22',
                     visible: false,
+                    search: true,
                     messages: [
                         {
                         date: '10/01/2020 15:30:55',
@@ -185,7 +193,7 @@ createApp ({
             counter: 0,
             newMessageUser: '',
             now: new Date(),
-            searchInChat:''
+            searchInChat: ''
         }
     },
     methods: {
@@ -212,7 +220,7 @@ createApp ({
             }
             this.contacts[this.counter].messages.push(messageReplyBot);
         },
-        searchTheLetters () {
+        searchTheLetters(){
             if(this.searchInChat.length > 0){
                 const newWord =  this.searchInChat[0].toUpperCase() + this.searchInChat.toLowerCase().substring(1, this.searchInChat.length) ;
             
@@ -225,6 +233,6 @@ createApp ({
         }   
     },
     mounted(){
-        console.log('montata');
+        console.log('Montata');
     }
 }).mount('#app')

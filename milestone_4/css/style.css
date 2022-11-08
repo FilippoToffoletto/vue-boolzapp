@@ -39,6 +39,9 @@ img{
 .active{
     background-color: #EAEAEA;
 }
+.d-none{
+    display: none;
+}
 
 
 
