@@ -107,18 +107,11 @@
                 </div>
                 <!-- CHAT CONTENT -->
                 <div class="single-chat-content flex-column gap-10">
-                    <div class="sent">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio nulla dicta iusto? Minus libero illo pariatur assumenda laudantium obcaecati nisi porro vitae sequi aut sit, maxime ullam ipsa, voluptatibus minima provident quis fugiat alias nesciunt? Veniam voluptatem aliquam cum porro.</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <span class="msg-time">12.00</span>
-                    </div>
-                    <div class="sent">
-                        <p>Ricordati di stendere i panni</p>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <span class="msg-time">12.00</span>
-                    </div>
-                    <div class="received">
-                        <p>Tutto fatto!</p>
+                    <div 
+                    class="sent"
+                    v-for="(elem, index) in contacts[counter].messages"
+                    :class="elem.status" ref="msg">
+                        <p>{{elem.message}}</p>
                         <i class="fa-solid fa-chevron-down"></i>
                         <span class="msg-time">12.00</span>
                     </div>
