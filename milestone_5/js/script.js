@@ -193,7 +193,11 @@ createApp ({
             counter: 0,
             newMessageUser: '',
             now: new Date(),
-            searchInChat: ''
+            searchInChat: '',
+            msgDelete: {
+                index: null,
+                show: false,
+            },
         }
     },
     methods: {
@@ -230,8 +234,20 @@ createApp ({
             }else {
                 this.contacts.forEach(contact => contact.search = true);
             }       
-        }   
-        
+        },
+        deleteMessage(i){
+            this.contacts[this.counter].messages.splice(i, 1);
+            this.msgDelete.show = false;
+        },
+        showOption(i){
+            if(i === this.msgDelete.index && this.msgDelete.show){
+                this.msgDelete.index = null;
+                this.msgDelete.show = false;
+            } else {
+                this.msgDelete.index = i;
+                this.msgDelete.show = true;
+            }
+        }
     },
     mounted(){
         console.log('Montata');

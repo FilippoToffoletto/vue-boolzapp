@@ -287,3 +287,34 @@ a:hover{
     color: red;
 }
 
+
+div.delete-msg{
+    padding: 10px 10px;
+}
+.delete-msg {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    z-index: 1000;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-msg:hover {
+    background-color: #EAEAEA;
+}
+.delete-msg span{
+    font-size: .8rem;
+    color: red;
+    flex-grow: 1;
+}
+.delete-msg span i{
+    color: red;
+    height: 100%;
+    display: block;
+}
+.delete-msg span:hover i{
+    display: block;
+}
